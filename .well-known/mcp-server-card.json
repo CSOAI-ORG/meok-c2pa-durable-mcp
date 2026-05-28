@@ -1,0 +1,31 @@
+{
+  "name": "meok-c2pa-durable-mcp",
+  "title": "Meok C2Pa Durable Mcp",
+  "description": "MEOK C2PA Durable Content Credentials MCP \u2014 C2PA 2.2 with soft + hard binding (Digimarc-compatible). Survives compression / crop / screenshot. First-mover before Adobe ships. By MEOK AI Labs.",
+  "version": "1.0.0",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "build_durable_manifest"
+    },
+    {
+      "name": "build_soft_binding"
+    },
+    {
+      "name": "merge_hard_and_soft"
+    },
+    {
+      "name": "verify_durable_manifest"
+    },
+    {
+      "name": "list_soft_binding_methods"
+    },
+    {
+      "name": "sign_cose1_envelope"
+    }
+  ]
+}

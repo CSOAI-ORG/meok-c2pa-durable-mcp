@@ -1,0 +1,22 @@
+# meok-c2pa-durable-mcp
+
+> MEOK C2PA Durable Content Credentials MCP — C2PA 2.2 with soft + hard binding (Digimarc-compatible). Survives compression / crop / screenshot. First-mover before Adobe ships. By MEOK AI Labs.
+
+MCP server by MEOK AI Labs. Framework: fastmcp. Transport: stdio.
+
+## Tools
+- build_durable_manifest
+- build_soft_binding
+- merge_hard_and_soft
+- verify_durable_manifest
+- list_soft_binding_methods
+- sign_cose1_envelope
+
+## Install
+```
+pip install meok-c2pa-durable-mcp
+```
+
+## Links
+- PyPI: https://pypi.org/project/meok-c2pa-durable-mcp/
+- Docs: https://meok.ai
