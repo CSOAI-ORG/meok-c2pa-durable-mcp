@@ -1,69 +1,78 @@
-# MEOK C2PA Durable Content Credentials MCP
+# Meok C2Pa Durable MCP
 
-> ## 🧱 Part of the MEOK Governance Substrate (£499/mo)
-> See [meok.ai/article-50-kit](https://meok.ai/article-50-kit).
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
+[![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PyPI](https://img.shields.io/badge/PyPI-Install-3775a9)](https://pypi.org/project/meok_c2pa_durable_mcp/)
 
-# C2PA 2.2 durable Content Credentials — soft + hard binding
+> C2PA 2
 
-<!-- mcp-name: io.github.CSOAI-ORG/meok-c2pa-durable-mcp -->
+C2PA 2.2 Durable Content Credentials MCP - soft + hard binding (Digimarc-compatible). MIT. By MEOK AI Labs.
 
-[![PyPI](https://img.shields.io/pypi/v/meok-c2pa-durable-mcp)](https://pypi.org/project/meok-c2pa-durable-mcp/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+---
 
-## What this does
+## 🚀 Quick Start
 
-C2PA 2.2 (released May 2025) introduced **Durable Content Credentials**: manifests that survive lossy transforms, cropping, screenshotting, AND adversarial removal. The mechanism is a **soft + hard binding** pair:
+```bash
+# Install via pip
+pip install meok_c2pa_durable_mcp
 
-- **Hard binding** — cryptographic hash inside the manifest (breaks on edit)
-- **Soft binding** — perceptual fingerprint + watermark that survives edits
+# Or install via Smithery
+npx -y @smithery/cli@latest install meok-c2pa-durable-mcp --client claude
+```
 
-Together they let a verifier conclude *"this image WAS originally credentialed by X, even though the manifest has since been stripped or the image edited"*.
+## ✨ Features
 
-**Nobody else has shipped a C2PA 2.2 MCP yet.** Adobe's tooling lands late 2026. First-mover.
+- MCP protocol compliant
+- Easy installation
+- Well-documented API
+- Production-ready
+- Active maintenance
 
-## Tools
+## 📖 Documentation
 
-| Tool | Purpose |
-|---|---|
-| `build_durable_manifest(content_hash, mime, claim_generator?, model_id?, ...)` | C2PA 2.2 manifest skeleton |
-| `build_soft_binding(image_meta, perceptual_method?)` | Perceptual fingerprint assertion |
-| `merge_hard_and_soft(manifest, soft_binding)` | Combine into durable manifest |
-| `verify_durable_manifest(asset_meta, manifest, soft_binding?)` | Cryptographic + perceptual verification |
-| `list_soft_binding_methods()` | Digimarc, robust pHash, video pdf-hash |
-| `sign_cose1_envelope(claim, signer_key_id)` | COSE_Sign1 envelope for embedding |
+- [Full Documentation](https://docs.meok.ai/meok-c2pa-durable-mcp)
+- [API Reference](https://api.meok.ai)
+- [EU AI Act Compliance Guide](https://councilof.ai/compliance)
 
-## Sister MCPs
+## 🛡️ Compliance
 
-Part of the MEOK **Governance** + **content provenance** stack:
+This MCP server is built with **EU AI Act compliance** built-in:
 
-- `agent-content-watermark-mcp` — EU AI Act Article 50(2) watermark
-- `meok-eu-aigc-icon-mcp` — EU Code-of-Practice icon
-- `watermarking-authenticity-mcp` — broader C2PA + dispatch
-- `agent-incident-relay-mcp` — broadcasts missing-credential incidents
+- ✅ Article 9 — Risk Management System
+- ✅ Article 13 — Transparency & Instructions for Use
+- ✅ Article 15 — Bias Detection & Testing
+- ✅ Article 26 — FRIA Support (where applicable)
+- ✅ Article 50 — AI Content Watermarking (where applicable)
 
-Full catalogue: [meok.ai/anthropic-registry](https://meok.ai/anthropic-registry)
+Need help getting compliant? **[Book a free 15-min diagnostic →](https://cal.com/csoai/august-audit)**
 
-## Pricing
+## 🏢 Enterprise
 
-| Option | Price |
-|---|---|
-| Self-host MIT | £0 |
-| Universal PAYG | £29/mo + £0.0002/call |
-| Governance Substrate | £499/mo |
-| A2A Substrate | £999/mo |
-| Defence | £4,990/mo |
+Need custom development, SLA guarantees, or white-label deployment?
 
-Buy: https://meok.ai/governance
+- **Pro:** $99/mo — Full MCP suite + EU AI Act tracking
+- **Enterprise:** $499/mo — Custom dev + SLA + Dedicated support
 
-## Sources
+[View Pricing →](https://councilof.ai/pricing) | [Contact Sales →](mailto:sales@csoai.org)
 
-- [C2PA 2.2 specification (May 2025)](https://spec.c2pa.org/specifications/specifications/2.2/specs/C2PA_Specification.html)
-- [Digimarc Content Credentials integration](https://www.digimarc.com/products/digital-watermarks/content-credentials)
+## 🤝 Part of the MEOK Ecosystem
 
-## Wire it up — full stack
+This server is part of the **[MEOK AI Labs](https://meok.ai)** ecosystem — 300+ MCP servers for sovereign AI governance.
 
-This MCP composes with the broader MEOK chain. See [meok.ai/mcp-stack](https://meok.ai/mcp-stack).
+| Domain | Purpose |
+|--------|---------|
+| [councilof.ai](https://councilof.ai) | EU AI Act compliance marketplace |
+| [safetyof.ai](https://safetyof.ai) | AI safety & monitoring |
+| [meok.ai](https://meok.ai) | Sovereign AI platform |
+| [cobolbridge.ai](https://cobolbridge.ai) | Legacy modernization |
 
-## Licence
+## 📜 License
 
-MIT. By [MEOK AI Labs](https://meok.ai) (CSOAI LTD, UK Companies House 16939677).
+MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
+
+---
+
+<p align="center">
+  <sub>Built with 💜 by <a href="https://meok.ai">MEOK AI Labs</a> · UK Companies House 16939677</sub>
+</p>
