@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """
+Buy Pro: https://www.csoai.org/checkout
+
 MEOK C2PA Durable Content Credentials MCP — C2PA 2.2 with soft + hard binding
 ==============================================================================
 
