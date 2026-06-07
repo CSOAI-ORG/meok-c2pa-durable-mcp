@@ -2,8 +2,26 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.CSOAI-ORG/meok-c2pa-durable-mcp",
   "version": "1.0.0",
-  "description": "MEOK C2PA Durable Content Credentials MCP — C2PA 2.2 with soft + hard binding (Digimarc-compatible). Survives compression / crop / screenshot. First-mover before Adobe ships. By MEOK AI Labs.",
-  "repository": { "url": "https://github.com/CSOAI-ORG/meok-c2pa-durable-mcp", "source": "github" },
-  "packages": [{ "registryType": "pypi", "identifier": "meok-c2pa-durable-mcp", "version": "1.0.0", "runtimeHint": "python", "transport": { "type": "stdio" } }],
-  "remotes": [{ "type": "streamable-http", "url": "https://api.meok.ai/v1/governance/c2pa-durable" }]
+  "description": "MEOK C2PA Durable Content Credentials MCP \u2014 C2PA 2.2 with soft + hard binding (Digimarc-compatible)",
+  "repository": {
+    "url": "https://github.com/CSOAI-ORG/meok-c2pa-durable-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "meok-c2pa-durable-mcp",
+      "version": "1.0.0",
+      "runtimeHint": "python",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.meok.ai/v1/governance/c2pa-durable"
+    }
+  ]
 }
