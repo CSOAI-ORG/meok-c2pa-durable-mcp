@@ -1,0 +1,24 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "meok-c2pa-durable-mcp",
+    "description": "MEOK C2PA Durable Content Credentials MCP \u2014 C2PA 2.2 with soft + hard binding (Digimarc-compatible)",
+    "version": "1.0.1",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "meok-c2pa-durable-mcp"
+      }
+    ],
+    "capabilities": [
+      "build_durable_manifest",
+      "build_soft_binding",
+      "merge_hard_and_soft",
+      "verify_durable_manifest",
+      "list_soft_binding_methods",
+      "sign_cose1_envelope"
+    ]
+  }
+}

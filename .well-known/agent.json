@@ -1,0 +1,77 @@
+{
+  "name": "meok-c2pa-durable-mcp",
+  "description": "MEOK C2PA Durable Content Credentials MCP \u2014 C2PA 2.2 with soft + hard binding (Digimarc-compatible)",
+  "url": "https://proofof.ai/scorecard/meok-c2pa-durable-mcp.html",
+  "version": "1.0.1",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "build_durable_manifest",
+      "name": "Build Durable Manifest",
+      "description": "build_durable_manifest via meok-c2pa-durable-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "build_soft_binding",
+      "name": "Build Soft Binding",
+      "description": "build_soft_binding via meok-c2pa-durable-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "merge_hard_and_soft",
+      "name": "Merge Hard And Soft",
+      "description": "merge_hard_and_soft via meok-c2pa-durable-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "verify_durable_manifest",
+      "name": "Verify Durable Manifest",
+      "description": "verify_durable_manifest via meok-c2pa-durable-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "list_soft_binding_methods",
+      "name": "List Soft Binding Methods",
+      "description": "list_soft_binding_methods via meok-c2pa-durable-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "sign_cose1_envelope",
+      "name": "Sign Cose1 Envelope",
+      "description": "sign_cose1_envelope via meok-c2pa-durable-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}
