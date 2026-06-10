@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "meok-c2pa-durable-mcp": {
+      "command": "uvx",
+      "args": [
+        "meok-c2pa-durable-mcp"
+      ]
+    }
+  }
+}
