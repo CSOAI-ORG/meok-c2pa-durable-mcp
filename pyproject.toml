@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "meok-c2pa-durable-mcp"
-version = "1.0.1"
+version = "1.0.2"
 description = "MEOK C2PA Durable Content Credentials MCP — C2PA 2.2 with soft + hard binding (Digimarc-compatible). Survives compression / crop / screenshot. First-mover before Adobe ships. By MEOK AI Labs."
 readme = "README.md"
 license = { text = "MIT" }

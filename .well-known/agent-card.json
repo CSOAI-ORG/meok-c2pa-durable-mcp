@@ -1,0 +1,134 @@
+{
+  "name": "Meok C2Pa Durable Mcp",
+  "version": "1.0.0",
+  "url": "https://mcp.meok.ai/meok-c2pa-durable-mcp/a2a",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "protocolVersion": "0.3.0",
+  "description": "MEOK C2PA Durable Content Credentials MCP — C2PA 2.2 with soft + hard binding (Digimarc-compatible). Survives compression / crop / screenshot. First-mover before Adobe ships. By MEOK AI Labs.",
+  "provider": {
+    "organization": "MEOK AI LABS",
+    "url": "https://meok.ai"
+  },
+  "defaultInputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "skills": [
+    {
+      "id": "build_durable_manifest",
+      "name": "Build Durable Manifest",
+      "description": "Build Durable Manifest — a tool of the meok-c2pa-durable-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "build_soft_binding",
+      "name": "Build Soft Binding",
+      "description": "Build Soft Binding — a tool of the meok-c2pa-durable-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "merge_hard_and_soft",
+      "name": "Merge Hard And Soft",
+      "description": "Merge Hard And Soft — a tool of the meok-c2pa-durable-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "verify_durable_manifest",
+      "name": "Verify Durable Manifest",
+      "description": "Verify Durable Manifest — a tool of the meok-c2pa-durable-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "list_soft_binding_methods",
+      "name": "List Soft Binding Methods",
+      "description": "List Soft Binding Methods — a tool of the meok-c2pa-durable-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "sign_cose1_envelope",
+      "name": "Sign Cose1 Envelope",
+      "description": "Sign Cose1 Envelope — a tool of the meok-c2pa-durable-mcp MCP.",
+      "tags": [
+        "mcp",
+        "meok"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    }
+  ],
+  "documentationUrl": "https://meok.ai",
+  "x-meok": {
+    "mcp_name": "meok-c2pa-durable-mcp",
+    "verifier": "https://proofof.ai/verify",
+    "governed_by": "CSOAI 52-article charter"
+  }
+}
