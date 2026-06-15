@@ -1,2 +1,0 @@
-[console_scripts]
-meok-c2pa-durable-mcp = server:main
