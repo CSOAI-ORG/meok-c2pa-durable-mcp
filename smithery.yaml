@@ -3,7 +3,7 @@ description: "> ## 🧱 Part of the MEOK Governance Substrate (£499/mo)"
 version: 1.0.0
 author: MEOK AI Labs
 homepage: https://meok.ai
-repository: https://github.com/MEOK-AI-Labs/meok-c2pa-durable-mcp
+repository: https://github.com/CSOAI-ORG/meok-c2pa-durable-mcp
 license: MIT
 categories:
   - compliance
